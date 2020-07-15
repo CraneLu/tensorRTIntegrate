@@ -11,6 +11,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="batch_infer.cpp" />
     <ClCompile Include="src\builder\trt_builder.cpp" />
     <ClCompile Include="src\caffeplugin\caffeplugin.cpp" />
     <ClCompile Include="src\common\cc_util.cpp" />
@@ -148,8 +149,8 @@
     <LinkIncremental>false</LinkIncremental>
     <OutDir>workspace</OutDir>
     <IntDir>build\$(Platform)\$(Configuration)\</IntDir>
-    <IncludePath>./lean/cuda10.0/include;./lean/cudnn7.6.3;./lean/opencv3.4.6/include;./lean/TensorRT-7.0.0.11/include;./lean/onnx/include;./lean/protobuf3.11.4/include;./src;./src/common;$(VC_IncludePath);$(WindowsSDK_IncludePath)</IncludePath>
-    <LibraryPath>./lean/TensorRT-7.0.0.11/lib;./lean/opencv3.4.6/lib;./lean/cudnn7.6.3;./lean/protobuf3.11.4/lib;./lean/onnx/lib;./lean/cuda10.0/lib;$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64)</LibraryPath>
+    <IncludePath>./lean/cuda10.1/include;./lean/cudnn7.6.5;./lean/opencv4.0.0/include;./lean/TensorRT-6.0.1.5/include;./lean/onnx/include;./lean/protobuf3.11.4/include;./src;./src/common;$(VC_IncludePath);$(WindowsSDK_IncludePath)</IncludePath>
+    <LibraryPath>./lean/TensorRT-6.0.1.5/lib;./lean/opencv4.0.0/lib;./lean/cudnn7.6.5;./lean/protobuf3.11.4/lib;./lean/onnx/lib;./lean/cuda10.1/lib;$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>

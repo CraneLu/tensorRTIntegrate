@@ -9,7 +9,7 @@ LEAN := /datav/newbb/lean
 BINDIR := workspace
 
 TENSORRT_NAME := TensorRT-7.0.0.11
-#TENSORRT_NAME := TensorRT-6.0.1.8-cuda10.2-cudnn7.6
+#TENSORRT_NAME := TensorRT-6.0.1.5-cuda10.1-cudnn7.6
 CFLAGS := -std=c++11 -fPIC -m64 -g -O3 -fopenmp -w -DONNX_ML -DNDEBUG 
 CUFLAGS := -std=c++11 -m64 -Xcompiler -fPIC -g -O3 -w -gencode=arch=compute_75,code=sm_75 -gencode=arch=compute_61,code=sm_61
 INC_OPENCV := $(LEAN)/opencv4.2.0/include/opencv4

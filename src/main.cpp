@@ -6,10 +6,11 @@
 namespace examples {
 
 	// src/examples/*.cpp
-	void center_net_coco2x_dcn();
-	void center_track_coco_tracking();
-	void dbface();
-	void onnx();
+	// void center_net_coco2x_dcn();
+	// void center_track_coco_tracking();
+	// void dbface();
+	// void onnx();
+	void batch_infer();
 };
 
 int main() {
@@ -18,9 +19,11 @@ int main() {
 	ccutil::setLoggerSaveDirectory("logs");
 	TRTInfer::setDevice(0);
 
-	examples::onnx();
-	examples::dbface();
-	examples::center_net_coco2x_dcn();
-	examples::center_track_coco_tracking();
+
+
+	// examples::onnx();
+	// examples::dbface();
+	// examples::center_net_coco2x_dcn();
+	// examples::center_track_coco_tracking();
 	return 0;
 }
