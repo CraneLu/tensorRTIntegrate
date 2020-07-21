@@ -444,11 +444,12 @@ namespace TRTInfer {
 		Assert(image.channels() == 3 && !image.empty() && type() == DataType::dtFloat);
 		toCPU(false);
 
-		float scale = 1 / 255.0;
+		float scale = 1.0f / 255.0f;
 		cv::Mat inputframe = image;
 		if(inputframe.size() != cv::Size(width_, height_))
 			cv::resize(inputframe, inputframe, cv::Size(width_, height_));
 
+		//inputframe.convertTo(inputframe, CV_32FC3, scale);
 		inputframe.convertTo(inputframe, CV_32F, scale);
 
 		cv::Mat ms[3];
